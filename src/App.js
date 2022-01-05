@@ -7,6 +7,7 @@ import {
     Route
 } from "react-router-dom";
 import EditPage from "./Pages/Home/EditPage";
+import CreatePage from "./Pages/Home/Create";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                       {/*<Route path="new" element={<NewTeamForm />} />*/}
                       {/*<Route index element={<LeagueStandings />} />*/}
                   </Route>
+              <Route path={'create'} element={<CreatePage />}/>
           </Routes>
       </BrowserRouter>
   );
